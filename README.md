@@ -95,7 +95,7 @@ node verify_ui.mjs   # popup UI assertions
 1. `chrome://extensions` → enable **Developer mode**
 2. **Load unpacked** → select this directory
 
-> If you kept the pristine upstream copy locally (e.g. `../Skip Paywall/`), keep it outside the repo — it's useful for diffing, but shouldn't be published.
+> If you kept the pristine upstream copy locally (e.g. `../Skip Wait Extension/`), keep it outside the repo — it's useful for diffing, but shouldn't be published.
 
 ## Re-patching a future upstream release
 
