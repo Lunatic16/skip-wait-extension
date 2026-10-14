@@ -103,7 +103,21 @@ The patcher is idempotent against pristine bundles and reports `MISSING` for any
 
 ```bash
 # fetch the new CRX from the Chrome Web Store, unpack it, then:
-python3 patch_unlocked.py /path/to/unpacked-copy
+python3 patch_unlocked.py unpatched-skip-wait-extension/
+Patching /path/to/unpatched-skip-wait-extension
+  [background] ok: license/quota gate lt -> always-true
+  [background] ok: daily meter ct -> no-op
+  [background] ok: eas-x public-key fetch -> data: URL
+  [background] ok: eas-x licenses POST -> data: URL
+  [content] ok: license/quota gate nt -> always-true
+  [content] ok: daily meter N -> no-op
+  [content] ok: eas-x public-key fetch -> data: URL
+  [content] ok: eas-x licenses POST -> data: URL
+  [popup] ok: eas-x public-key fetch -> data: URL
+  [popup] ok: eas-x licenses POST -> data: URL
+  [popup] ok: status pill -> always ACTIVE
+  [popup] ok: license section nt() removed (7375 bytes)
+Done.
 ```
 
 ## Project layout
